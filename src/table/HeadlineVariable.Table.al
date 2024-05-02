@@ -23,7 +23,7 @@ table 80101 "HeadLine Variable"
             Caption = 'Variable Type', comment = 'ESP="Tipo Variable"';
             OptionMembers = Static,Dynamic;
         }
-        field(5; StaticValue; Text[250])
+        field(5; StaticValue; Enum "Static Values")
         {
             Caption = 'Static Value', comment = 'ESP="Valor Estatico"';
         }
@@ -40,13 +40,6 @@ table 80101 "HeadLine Variable"
         {
             Caption = 'Field No.', comment = 'ESP="No. Campo"';
             TableRelation = Field."No." where(TableNo = field(TableNo));
-
-            trigger OnValidate()
-            var
-                myInt: Integer;
-            begin
-
-            end;
         }
         field(9; TableView; Blob)
         {
@@ -68,7 +61,6 @@ table 80101 "HeadLine Variable"
         {
             Caption = 'Calculation Warning', comment = 'ESP="Advertencia Calculo"';
         }
-
     }
 
     keys
@@ -79,34 +71,31 @@ table 80101 "HeadLine Variable"
         }
     }
 
-    internal procedure GetTableFilter(TableNo: Integer): Text
-    var
-        AllObjWithCaption: Record AllObjWithCaption;
-        FilterPage: FilterPageBuilder;
-        CurrentView: Text;
-    begin
-        CurrentView := GetVariableRecordTableView();
 
-        AllObjWithCaption.Get(ObjectType::Table, TableNo);
-
-        FilterPage.AddTable(AllObjWithCaption."Object Name", TableNo);
-
-        if CurrentView <> '' then
-            FilterPage.SetView(AllObjWithCaption."Object Name", CurrentView);
-
-        FilterPage.RunModal();
-
-        exit(FilterPage.GetView(AllObjWithCaption."Object Name"));
-    end;
-
+    /// <summary>
+    /// Gets the value of the variable, if enough time has elapsed since last calculation, it recalculates the value
+    /// </summary>
+    /// <returns>The variable value as text</returns>
     procedure GetValue(): Text
+    var
+        recHeadlineSettings: Record "Headline Settings";
+        ElapsedTime: Duration;
     begin
-        if Rec.CachingDate < CalcDate('-1D', Today) then
+
+        if Rec.VariableType = VariableType::Static then
+            exit(GetStaticValue());
+
+        recHeadlineSettings.Get();
+
+        if GetElapsedTime() > recHeadlineSettings.GetRefreshInterval() then
             CalculateValue();
 
         exit(Rec.CachedValue);
     end;
 
+    /// <summary>
+    /// Calculates the value of the Variable based on the specified record, operation and specified filters
+    /// </summary>
     procedure CalculateValue()
     var
         Operations: Codeunit Operations;
@@ -119,8 +108,13 @@ table 80101 "HeadLine Variable"
         Rec.CachingDate := Today;
         Rec.CachingTime := Time;
         Rec.Modify();
+
+        Commit(); // Commits the calculation so further Codeunit executions don't cause a transaction error
     end;
 
+    /// <summary>
+    /// Gets the saved TableView from the Blob field and returns it as Text
+    /// </summary>
     procedure GetVariableRecordTableView() BlobTextContent: Text
     var
         InStr: InStream;
@@ -128,5 +122,25 @@ table 80101 "HeadLine Variable"
         Rec.CalcFields(TableView);
         Rec.TableView.CreateInStream(InStr);
         InStr.ReadText(BlobTextContent);
+    end;
+
+    local procedure GetStaticValue(): Text
+    begin
+        case StaticValue of
+            "Static Values"::UserName:
+                exit(UserId);
+            "Static Values"::CompanyName:
+                exit(CompanyName);
+        end;
+    end;
+
+    procedure GetElapsedTime() ElapsedTime: Duration
+    var
+        LastCachedDateTime: DateTime;
+    begin
+        LastCachedDateTime := CreateDateTime(Rec.CachingDate, Rec.CachingTime);
+        if (Rec.CachingDate = 0D) and (Rec.CachingTime = 0T) then
+            exit(0);
+        ElapsedTime := CurrentDateTime - LastCachedDateTime;
     end;
 }

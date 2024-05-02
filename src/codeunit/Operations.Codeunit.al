@@ -27,6 +27,12 @@ codeunit 80100 Operations
             VariableResultAsText := StrSubstNo(CalculationError, Rec.RecordId, GetLastErrorText());
     end;
 
+    /// <summary>
+    /// Tries to run the specified operation on the specified variable record and fills the result in the OperationResult variable
+    /// </summary>
+    /// <param name="Rec">The Headline Variable Record</param>
+    /// <param name="OperationResult">The result of the specified operation that will be filled by the function</param>
+    /// <returns>True if the operation is completed successfully, false otherwise and catches the error</returns>
     [TryFunction]
     procedure RunOperation(var Rec: Record "HeadLine Variable"; var OperationResult: Text)
     var
@@ -81,6 +87,10 @@ codeunit 80100 Operations
         Success := true;
     end;
 
+    /// <summary>
+    /// Gets the value of the global variable in which the operation result is stored
+    /// </summary>
+    /// <returns>The value obtained from the operation</returns>
     procedure GetValue(): Text
     begin
         if not Success then
@@ -88,25 +98,6 @@ codeunit 80100 Operations
 
         exit(VariableResultAsText);
     end;
-
-    #region Setter and Getter for RecordRef
-
-    procedure SetRecRef(var RecRef: RecordRef)
-    begin
-        OperationRecRef.Open(RecRef.RecordId.TableNo);
-        OperationRecRef.Copy(RecRef);
-        IsSet := true;
-    end;
-
-    procedure GetRecRef(var RecRef: RecordRef): Boolean
-    begin
-        if IsSet then begin
-            RecRef := OperationRecRef;
-            exit(true);
-        end;
-    end;
-
-    #endregion Setter and Getter for RecordRef
 
     #region Operation Methods
 

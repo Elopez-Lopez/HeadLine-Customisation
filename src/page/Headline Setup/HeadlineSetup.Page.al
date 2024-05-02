@@ -1,46 +1,31 @@
-page 80101 "Headline Setup"
+page 80104 "Headline Setup"
 {
-    Caption = 'Headline Setup', Comment = 'ESP="Configuracion de Cabecera"';
-    PageType = List;
+    Caption = 'Headling Settings', Comment = 'ESP="Configuración Headline"';
+    PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
-    SourceTable = "Custom Headline";
+    SourceTable = "Headline Settings";
 
     layout
     {
         area(Content)
         {
-            repeater(HeadlineList)
+            group(Refresh)
             {
-                field(ProfileID; Rec.ProfileID)
-                {
-                    ToolTip = 'Specifies the value of the Profile ID field.', Comment = 'ESP="ID Perfil"';
-                    StyleExpr = RecStyleExpression;
-                }
-                field(HeadlinePosition; Rec.HeadlinePosition)
-                {
-                    ToolTip = 'Specifies the value of the Headline Position field.', Comment = 'ESP="Posicion Cabecera"';
-                    StyleExpr = RecStyleExpression;
-                }
-                field(HeadlineText; Rec.HeadlineText)
-                {
-                    ToolTip = 'Specifies the value of the Headline Text field.', Comment = 'ESP="Texto Cabecera"';
-                    StyleExpr = RecStyleExpression;
+                Caption = 'Refresh rate', Comment = 'ESP="Tasa de refresco"';
 
-                    trigger OnValidate()
-                    begin
-                        CurrPage.Update();
-                    end;
-                }
-                field(HeadlineVariables; Rec.HeadlineVariables)
+                field(RefreshHourInterval; Rec.RefreshHourInterval)
                 {
-                    ToolTip = 'Specifies the value of the Headline Variables field.', Comment = 'ESP="Variables Cabecera"';
-                    StyleExpr = RecStyleExpression;
+                    ToolTip = 'Specifies the value of the Refresh Hour Interval field.', Comment = 'ESP="Intervalo de Refresco en Horas"';
                 }
-                field(WarningNote; WarningNote)
+                field(RefreshMinuteInterval; Rec.RefreshMinuteInterval)
                 {
-                    ToolTip = 'Specifies the value of the Warning Note field.', Comment = 'ESP="Nota Advertencia"';
-                    StyleExpr = RecStyleExpression;
+                    ToolTip = 'Specifies the value of the Refresh Minute Interval field.', Comment = 'ESP="Intervalo de Refresco en Minutos"';
+                }
+                field(RefreshInterval; Rec.GetRefreshInterval())
+                {
+                    Caption = 'Refresh Interval', Comment = 'ESP="Intervalo de Refresco"';
+                    ToolTip = 'Specifies the value of the Refresh Interval field.', Comment = 'ESP="Intervalo de Refresco"';
                     Editable = false;
                 }
             }
@@ -51,33 +36,18 @@ page 80101 "Headline Setup"
     {
         area(Promoted)
         {
-            actionref(Navigateref; Navigate) { }
+            actionref(Headlines_Ref; Headlines) { }
         }
 
         area(Processing)
         {
-            action(Navigate)
+            action(Headlines)
             {
+                Caption = 'Headlines', Comment = 'ESP="Headlines"';
                 ApplicationArea = All;
-                Image = Navigate;
-                RunObject = page "Headline Variables";
-                RunPageLink = ProfileID = field(ProfileID), HeadlinePosition = field(HeadlinePosition);
+                Image = ShowList;
+                RunObject = page "Headline List";
             }
         }
     }
-
-    protected var
-        RecStyleExpression, WarningNote : Text;
-        PlaceHolderWarning_Lbl: Label 'The number of placeholders in the text should match the number of variables.', comment = 'ESP="El numero de placeholders del texto debe coincidir con el numero de variables."';
-
-    trigger OnAfterGetRecord()
-    begin
-        if not Rec.CheckHeadlineVariables() then begin
-            RecStyleExpression := 'Ambiguous';
-            WarningNote := PlaceHolderWarning_Lbl;
-        end else begin
-            RecStyleExpression := 'None';
-            WarningNote := '';
-        end;
-    end;
 }

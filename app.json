@@ -1,7 +1,7 @@
 {
   "id": "9daba057-b589-4859-97dd-02f7e52e48b4",
   "name": "HeadLine Customisation",
-  "publisher": "Default Publisher",
+  "publisher": "Tebbie Inc.",
   "version": "1.0.0.0",
   "brief": "",
   "description": "",
@@ -27,6 +27,7 @@
   },
   "runtime": "13.0",
   "features": [
-    "NoImplicitWith"
+    "NoImplicitWith",
+    "TranslationFile"
   ]
 }

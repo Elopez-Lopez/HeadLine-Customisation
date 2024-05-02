@@ -12,7 +12,7 @@ table 80100 "Custom Headline"
         }
         field(2; HeadlinePosition; Enum "Headline Position")
         {
-            Caption = 'Headline Position', Comment = 'ESP="Posicion Cabecera"';
+            Caption = 'Headline Position', Comment = 'ESP="Posición Cabecera"';
         }
         field(3; HeadlineText; Text[500])
         {
@@ -23,6 +23,15 @@ table 80100 "Custom Headline"
             Caption = 'Headline Variables', Comment = 'ESP="Variables Cabecera"';
             FieldClass = FlowField;
             CalcFormula = count("HeadLine Variable" where(ProfileID = field(ProfileID), HeadlinePosition = field(HeadlinePosition)));
+        }
+        field(5; NavigateRecord; Integer)
+        {
+            Caption = 'Navigate Record', Comment = 'ESP="Registro Navegación"';
+            TableRelation = AllObjWithCaption."Object ID" where("Object Type" = filter(Table));
+        }
+        field(6; NavigateView; Blob)
+        {
+            Caption = 'Navigate View', Comment = 'ESP="Vista Navegación"';
         }
 
     }
@@ -69,6 +78,35 @@ table 80100 "Custom Headline"
             exit('');
     end;
 
+    /// <summary>
+    /// Gets the saved TableView from the Blob field and returns it as Text
+    /// </summary>
+    procedure GetVariableRecordTableView() BlobTextContent: Text
+    var
+        InStr: InStream;
+    begin
+        Rec.CalcFields(NavigateView);
+        Rec.NavigateView.CreateInStream(InStr);
+        InStr.ReadText(BlobTextContent);
+    end;
+
+    /// <summary>
+    /// Navigates to the specified Data Reference
+    /// </summary>
+    procedure NavigateToDataReference()
+    var
+        PageManagement: Codeunit "Page Management";
+        recRef: RecordRef;
+        recordView: Text;
+    begin
+        recRef.Open(Rec.NavigateRecord);
+        recordView := GetVariableRecordTableView();
+        if recordView <> '' then
+            recRef.SetView(recordView);
+
+        PageManagement.PageRun(recRef);
+    end;
+
     local procedure FillHeadline(recCustomHeadline: Record "Custom Headline") FilledHeadLine: Text
     var
         placeholderText: Text;
@@ -76,20 +114,20 @@ table 80100 "Custom Headline"
     begin
         FilledHeadLine := recCustomHeadline.HeadlineText;
 
-        Rec.Calcfields(HeadlineVariables);
-        for i := 1 to Rec.HeadlineVariables do begin
+        recCustomHeadline.Calcfields(HeadlineVariables);
+        for i := 1 to recCustomHeadline.HeadlineVariables do begin
             placeholderText := placeholderConstructor_LblTok + Format(i); // %1, %2, %3, %4, %5, %6
-            if Rec.HeadlineText.Contains(placeholderText) then begin
-                FilledHeadLine := FilledHeadLine.Replace(placeholderText, GetVariableValue(i));
+            if recCustomHeadline.HeadlineText.Contains(placeholderText) then begin
+                FilledHeadLine := FilledHeadLine.Replace(placeholderText, GetVariableValue(recCustomHeadline, i));
             end;
         end;
     end;
 
-    local procedure GetVariableValue(VariablePosition: Integer): Text
+    local procedure GetVariableValue(recCustomHeadline: Record "Custom Headline"; VariablePosition: Integer): Text
     var
         recHeadlineVariable: Record "Headline Variable";
     begin
-        recHeadlineVariable.Get(Rec.ProfileID, Rec.HeadlinePosition, VariablePosition);
+        recHeadlineVariable.Get(recCustomHeadline.ProfileID, recCustomHeadline.HeadlinePosition, VariablePosition);
         exit(recHeadlineVariable.GetValue());
     end;
 

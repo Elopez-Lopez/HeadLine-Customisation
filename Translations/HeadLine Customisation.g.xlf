@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="HeadLine Customisation">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 26390423 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Custom Headlines</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Cabeceras Personalizadas"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Custom Headline - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 26390423 - NamedType 284890498" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Custom Headline - NamedType placeholderConstructor_LblTok</note>
+        </trans-unit>
+        <trans-unit id="Table 26390423 - Field 2099214921 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Headline Position</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Posición Cabecera"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Custom Headline - Field HeadlinePosition - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 26390423 - Field 2960881309 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Headline Text</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Texto Cabecera"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Custom Headline - Field HeadlineText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 26390423 - Field 3073956821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Headline Variables</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Variables Cabecera"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Custom Headline - Field HeadlineVariables - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 26390423 - Field 2450450334 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Navigate Record</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Registro Navegación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Custom Headline - Field NavigateRecord - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 26390423 - Field 472012542 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Navigate View</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Vista Navegación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Custom Headline - Field NavigateView - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 26390423 - Field 720061522 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Profile ID</source>
+          <note from="Developer" annotates="general" priority="2">ESP="ID Perfil"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Custom Headline - Field ProfileID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2453766229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Headline Settings</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Configuración de Headlines"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Headline Settings - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2453766229 - Field 970416965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PK</source>
+          <note from="Developer" annotates="general" priority="2">ESP="PK"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Headline Settings - Field PK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2453766229 - Field 746656070 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Refresh Hour Interval</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Intervalo de Refresco en Horas"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Headline Settings - Field RefreshHourInterval - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2453766229 - Field 1070070680 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Refresh Minute Interval</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Intervalo de Refresco en Minutos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Headline Settings - Field RefreshMinuteInterval - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905466444 - Field 941885389 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cached Value</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Valor Almacenado"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HeadLine Variable - Field CachedValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905466444 - Field 2550634159 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Caching Date</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Fecha Almacenamiento"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HeadLine Variable - Field CachingDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905466444 - Field 3143509632 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Caching Time</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Hora Almacenamiento"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HeadLine Variable - Field CachingTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905466444 - Field 1288787570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operation</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Operacion"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HeadLine Variable - Field Calc. Operation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905466444 - Field 4236972613 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calculation Warning</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Advertencia Calculo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HeadLine Variable - Field CalculationWarning - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905466444 - Field 2547700717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field No.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="No. Campo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HeadLine Variable - Field FieldNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905466444 - Field 2099214921 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Headline Position</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Posicion Cabecera"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HeadLine Variable - Field HeadlinePosition - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905466444 - Field 720061522 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Profile ID</source>
+          <note from="Developer" annotates="general" priority="2">ESP="ID Perfil"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HeadLine Variable - Field ProfileID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905466444 - Field 1893097597 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Static Value</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Valor Estatico"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HeadLine Variable - Field StaticValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905466444 - Field 103915345 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table No.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="No. Tabla"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HeadLine Variable - Field TableNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905466444 - Field 4113082709 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table View</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Vista Tabla"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HeadLine Variable - Field TableView - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905466444 - Field 2470195977 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Variable ID</source>
+          <note from="Developer" annotates="general" priority="2">ESP="ID Variable"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HeadLine Variable - Field VariablePosition - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905466444 - Field 4264622434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Variable Type</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Tipo Variable"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table HeadLine Variable - Field VariableType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1502400274 - NamedType 3546200051" size-unit="char" translate="yes" xml:space="preserve">
+          <source>An error has ocurred while calculating %1\Error: %2</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ha ocurrido un error al calcular %1\Error: %2"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Operations - NamedType CalculationError</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1502400274 - NamedType 1192501353" size-unit="char" translate="yes" xml:space="preserve">
+          <source>RecordRef not set</source>
+          <note from="Developer" annotates="general" priority="2">ESP="RecordRef no establecido"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Operations - NamedType RecRefNotSetErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1502400274 - NamedType 734516436" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field is of type %1\Allowed types %2</source>
+          <note from="Developer" annotates="general" priority="2">ESP="El campo es de tipo %1\Tipos permitidos %2"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Operations - NamedType TypeError</note>
+        </trans-unit>
+        <trans-unit id="Page 4002566052 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field List</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Lista de Campos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Field List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4002566052 - Control 3454070650 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the type of class. Normal is data entry, FlowFields calculate and display results immediately, and FlowFilters display results based on user-defined filter values that affect the calculation of a FlowField.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Field List - Control Class - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4002566052 - Control 823559016 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the caption of the field, that is, the name that will be shown in the user interface.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Field List - Control Field Caption - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4002566052 - Control 166597695 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the field in the table.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Field List - Control FieldName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4002566052 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the ID number of the field in the table.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Field List - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4002566052 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the type of the field in the table, which indicates the type of data it contains.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Field List - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3380984344 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Headline List</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Lista de Headlines"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3380984344 - NamedType 1485799032" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The number of placeholders in the text should match the number of variables.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="El numero de placeholders del texto debe coincidir con el numero de variables."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline List - NamedType PlaceHolderWarning_Lbl</note>
+        </trans-unit>
+        <trans-unit id="Page 3380984344 - Control 2099214921 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Headline Position field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Posicion Cabecera"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline List - Control HeadlinePosition - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3380984344 - Control 2960881309 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Headline Text field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Texto Cabecera"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline List - Control HeadlineText - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3380984344 - Control 3073956821 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Headline Variables field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Variables Cabecera"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline List - Control HeadlineVariables - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3380984344 - Control 2450450334 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Navigate Record field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Registro Navegación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline List - Control NavigateRecord - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3380984344 - Control 472012542 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Navigate View field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Vista Navegación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline List - Control NavigateView - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3380984344 - Control 720061522 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Profile ID field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="ID Perfil"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline List - Control ProfileID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3380984344 - Control 15714686 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Warning Note field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nota Advertencia"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline List - Control WarningNote - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 123752120 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Headline</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Saludo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline RC Custom - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1294145731 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Headling Settings</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Configuración Headline"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1294145731 - Control 2026913255 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Refresh rate</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Tasa de refresco"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Setup - Control Refresh - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1294145731 - Control 746656070 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Refresh Hour Interval field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Intervalo de Refresco en Horas"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Setup - Control RefreshHourInterval - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1294145731 - Control 954093838 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Refresh Interval field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Intervalo de Refresco"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Setup - Control RefreshInterval - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1294145731 - Control 954093838 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Refresh Interval</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Intervalo de Refresco"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Setup - Control RefreshInterval - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1294145731 - Control 1070070680 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Refresh Minute Interval field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Intervalo de Refresco en Minutos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Setup - Control RefreshMinuteInterval - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1294145731 - Action 1270888007 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Headlines</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Headlines"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Setup - Action Headlines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Headline Variables</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Variables de Cabecera"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - NamedType 2062659449" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field type %1 is not allowed.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="El tipo de campo %1 no es válido."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - NamedType ErrFieldTypeNotAllowed_Lbl</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Control 941885389 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Cached Value field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Valor Almacenado"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Control CachedValue - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Control 2550634159 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Caching Date field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Fecha Almacenamiento"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Control CachingDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Control 3143509632 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Caching Time field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Hora Almacenamiento"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Control CachingTime - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Control 3522904185 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Elapsed Time field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Tiempo Transcurrido"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Control ElapsedTime - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Control 2547700717 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Field No. field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="No. Campo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Control FieldNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Control 2099214921 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Headline Position field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Posicion Cabecera"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Control HeadlinePosition - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Control 720061522 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Profile ID field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="ID Perfil"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Control ProfileID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Control 1893097597 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Static Value field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Valor Estatico"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Control StaticValue - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Control 103915345 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Table No. field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="No. Tabla"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Control TableNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Control 4113082709 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Table View field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Filtro Tabla"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Control TableView - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Control 2235493052 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Operation field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Operacion"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Control VariableFormula - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Control 1138814709 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Variable ID field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="ID Variable"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Control VariableID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Control 4264622434 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the VariableType field.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Tipo Variable"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Control VariableType - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3350161485 - Action 1592581304 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calculate Variable</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Calcular Variable"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Headline Variables - Action Calculate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2583517617 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Headline Position</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Posición de Cabecera"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Headline Position - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3783999089 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Variable Position</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Posición de Variable"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Variable Position - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
